@@ -18,6 +18,15 @@ const nextConfig = {
           protocol: url.protocol.replace(':', ''),
         }
       }),
+      // Bucket S3 AWS
+      {
+        protocol: 'https',
+        hostname: '*.s3.*.amazonaws.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.s3.amazonaws.com',
+      },
     ],
   },
   webpack: (webpackConfig) => {
